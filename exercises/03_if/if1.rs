@@ -4,10 +4,16 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    if a>b { a }else{ b }
 }
 
 fn main() {
     // You can optionally experiment here.
+    let a = 10;
+    let b = 15;
+    // println!("{}和{}比", a, b);
+    let result = bigger(a, b);
+    println!("{}和{}比，较大的是{}", a, b, result);
 }
 
 // Don't mind this for now :)
